@@ -1,0 +1,85 @@
+.hello{
+  font-size: 100px;
+  color:blue;
+}
+
+.d1{
+  display: block;
+}
+.d2{
+  display: none;
+}
+
+
+.qf-lang {
+  &>span {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    cursor: pointer;
+  }
+  &>span.on {
+    background-color: orange;
+    color: white;
+    border-color: orange;
+  }
+}
+
+.qfmodal{
+  padding-bottom: 100px;
+}
+.qf-modal{
+  width: 520px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: white;
+  font-size: 14px;
+  margin: 20px auto;
+  .qf-modal-header{
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+    padding: 0 20px;
+    overflow: hidden;
+    &>span:last-child{
+      float: right;
+      cursor: pointer;
+    }
+  }
+  .qf-modal-content{
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .qf-modal-footer{
+    line-height: 50px;
+    border-top: 1px solid #ccc;
+    padding: 10px 20px;
+    overflow: hidden;
+    &>div {
+      &>span{
+        float: right;
+        line-height: 30px;
+        padding: 0 10px;
+        margin-left: 15px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        border-radius: 3px;
+        box-sizing: border-box;
+      }
+      &>span.delete{
+        background-color: red;
+        color: white;
+        border-color: red;
+      }
+      &>span.info{
+        background-color: blue;
+        color: white;
+        border-color: blue;
+      }
+      &>span.cancel{
+        background-color: skyblue;
+        color: white;
+        border-color: skyblue;
+      }
+    }
+  }
+}
